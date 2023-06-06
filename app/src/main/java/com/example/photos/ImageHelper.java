@@ -9,11 +9,6 @@ import android.widget.ImageView;
 
 import java.io.IOException;
 
-/**
- * методы позволяют уменьшить размеры изображения для лучшего представления
- */
-
-
 public class ImageHelper {
     public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
         final int width = options.outWidth;

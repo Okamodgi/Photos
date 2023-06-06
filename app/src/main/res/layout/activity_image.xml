@@ -10,8 +10,9 @@
     <Button
         android:id="@+id/button_next"
         android:layout_width="75dp"
-        android:layout_height="match_parent"
-        android:text="@string/btn"
+        android:layout_height="200dp"
+        android:text="ʕᵔᴥᵔʔ"
+        android:textColor="#E86565"
         android:background="#00FFFFFF"
         android:layout_marginStart="336dp"
         android:onClick="showNextImage"
@@ -33,15 +34,13 @@
     <Button
         android:id="@+id/button_back"
         android:layout_width="75dp"
-        android:layout_height="match_parent"
-        android:text="@string/btn"
+        android:layout_height="200dp"
         android:background="#00FFFFFF"
         android:onClick="showPreviousImage"
-        android:layout_marginEnd="336dp"
+        android:text="ʕᵔᴥᵔʔ"
+        android:textColor="#E86565"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

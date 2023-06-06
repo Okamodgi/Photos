@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 3);
                 recyclerView.setLayoutManager(layoutManager);
 
-                //оптимизация
                 recyclerView.setItemViewCacheSize(20);
                 recyclerView.setDrawingCacheEnabled(true);
                 recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
@@ -47,11 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setAdapter(adapter);
         }
 
-        /**
-         * Подготовка изображений для списка
-         *
-         * @return список
-         */
         private ArrayList<Cell> prepareDate() {
                 ArrayList<Cell> allImages = new ArrayList<>();
                 for (Cell c : allFilesPaths) {
@@ -63,13 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 return allImages;
         }
 
-
-        /**
-         * Загружает список файлов из папки
-         *
-         * @param pathName имя папки
-         * @return список
-         */
         private List<Cell> listAllFiles(String pathName) {
                 List<Cell> allFiles = new ArrayList<>();
                 File file = new File(pathName);

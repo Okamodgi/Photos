@@ -1,35 +1,27 @@
 package com.example.photos;
-
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
-
 public class Cell implements Parcelable {
     private String title;
     private String path;
-
     protected Cell(Parcel in) {
         title = in.readString();
         path = in.readString();
     }
-
     public Cell() {
-
     }
 
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
-
     public String getPath() {
         return path;
     }
-
     public void setPath(String path) {
         this.path = path;
     }
@@ -44,7 +36,6 @@ public class Cell implements Parcelable {
         parcel.writeString(title);
         parcel.writeString(path);
     }
-
 
     public static final Creator<Cell> CREATOR = new Creator<Cell>() {
         @Override

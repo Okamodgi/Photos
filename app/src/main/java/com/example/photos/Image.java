@@ -9,7 +9,6 @@ import java.io.File;
 import java.util.ArrayList;
 import com.github.chrisbanes.photoview.PhotoView;
 
-
 public class Image extends AppCompatActivity {
     private ArrayList<Cell> imagePaths;
     private int currentPosition;
